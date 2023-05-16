@@ -1,3 +1,7 @@
-42 / 6
-
-42 / 0
+begin
+    result = 42 / 0
+    puts result
+  rescue ZeroDivisionError => e
+    puts "Error: #{e.message}"
+  end
+  
